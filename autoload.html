@@ -1,0 +1,73 @@
+<html>
+
+<head>
+    
+    <style type="text/css">
+    
+    h1{
+        font-family: sans-serif;
+        color: blueviolet;
+        font-size: 25px;
+        //margin: 30px;
+        width: 500px;
+        height: 100px;
+        margin: auto;
+        margin-top: 50px;
+    }
+        
+        .popup{
+            
+         width: 400px;
+        height: 300px;
+        text-align: center;
+        padding: 30px;
+        background-color: rgba(0, 0, 0, .5);
+        font-family: "Trebuchet MS",Arial,sans-serif;
+            color: white;
+            visibility: hidden;
+            position: absolute;
+            top: 100px;
+            left: 40%;
+        }
+    </style>
+    
+    
+    </head>
+<body onload="downlord()">
+    
+    
+    <h1>Disaster Managenment Demo Page</h1>
+    <div class="popup" id="popup">
+    Hey Welcome to our site .We had made Accessing us more easy.<br>
+        Downlord our Android App. And get All services in your phone.
+        
+        <a href="downlord/d_andaman.apk">Downlord</a><br><br>
+        
+        <button onclick="close()">close</button>
+    
+    </div>
+    
+    </body>
+    
+    <script type="text/javascript">
+    var downlord=function(){
+        
+        var pop=document.getElementById("popup");
+        pop.style.visibility="visible";
+    
+    };
+        var close=function(){
+             var pop=document.getElementById("popup");
+                pop.style.visibility="hidden";
+            
+        };
+    
+    
+    
+    </script>
+
+
+
+
+
+</html>
